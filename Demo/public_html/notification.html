@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SW-Notification</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    body{
+        font-family: Verdana,sans-serif;
+        font-size: 14px;
+    }
+.container{
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    margin: 20px;
+    width: 500px;
+    /*padding: 50px;*/
+    margin: 0 auto;
+}
+.logo {
+    position: relative;
+}    
+a.logoLink {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+img.logo {
+    width: 64px;
+}
+.container h1 {
+    color: #000;
+    background-color: #f1f1f1;
+    padding: 20px 50px;
+} 
+.container p {
+    padding: 10px 50px;
+}
+.noti {
+    padding: 10px 50px;
+}
+.noti input[type="text"] {
+    padding: 10px;
+    margin: 8px 0;
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+}
+.btn{
+    text-align: center;
+}
+input[type="submit"] {
+    color: #fff;
+    background-color: #888;
+    padding: 10px 20px;
+    border: none;
+    width: 100px;
+    box-sizing: border-box;
+}
+</style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="container">
+                <div class="logo">
+                    <a href="/" class="logoLink">
+                        <img class="logo" src="http://s4.scoopwhoop.com/v4/static/sw/images/sw-logo.png">
+                    </a>
+                </div>
+                <h1>Push Notification</h1>
+                <p>This page must be accessed using HTTPS or via localhost.</p>
+                <div class="noti">
+                <form>
+                    <input type="text" placeholder="Article title">
+                    <input type="text" placeholder="Article URL">
+                    <div class="btn">
+                        <input type="submit" value="Send">
+                    </div>
+                </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
